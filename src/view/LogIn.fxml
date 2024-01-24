@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.LogIn">
+    <children>
+        <VBox alignment="CENTER" spacing="20.0" AnchorPane.leftAnchor="50.0"
+              AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="100.0">
+            <HBox spacing="10.0">
+                <Label text="Username"/>
+                <TextField fx:id="usernameField"/>
+            </HBox>
+            <HBox spacing="10.0">
+                <Label text="Password"/>
+                <PasswordField fx:id="passwordField"/>
+            </HBox>
+            <HBox spacing="10.0">
+                <Button text="Log In" onAction="#handleLogin"/>
+                <Button text="Exit" onAction="#handleExit"/>
+            </HBox>
+            <HBox spacing="10.0" fx:id="locationHBox" visible="true">
+                <Label fx:id="locationText" text="Location: " />
+                <Label fx:id="locationLabel" />
+            </HBox>
+        </VBox>
+    </children>
+</AnchorPane>
