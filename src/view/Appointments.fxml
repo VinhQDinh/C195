@@ -53,6 +53,9 @@
       <ComboBox layoutX="492.0" layoutY="517.0" prefWidth="150.0" />
       <ComboBox layoutX="492.0" layoutY="551.0" prefWidth="150.0" />
       <ComboBox layoutX="492.0" layoutY="588.0" prefWidth="150.0" />
-      <Button layoutX="722.0" layoutY="484.0" mnemonicParsing="false" prefWidth="96.0" text="Button" />
+      <Button layoutX="839.0" layoutY="484.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="134.0" text="Delete Appointment" />
+      <Button layoutX="697.0" layoutY="484.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="127.0" text="Add Appointment" />
+      <Button layoutX="839.0" layoutY="525.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="134.0" text="Update Appointment" />
+      <Button layoutX="906.0" layoutY="632.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="67.0" text="Back" />
    </children>
 </AnchorPane>
