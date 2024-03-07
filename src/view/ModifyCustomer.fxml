@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ModifyCustomer">
+    <children>
+        <Label alignment="TOP_CENTER" layoutX="14.0" layoutY="14.0" prefHeight="374.0" prefWidth="570.0" style="-fx-border-color: black;" text="Modify Customer">
+            <font>
+                <Font name="System Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="46.0" layoutY="50.0" prefHeight="25.0" prefWidth="69.0" text="Customer ID" />
+        <Label layoutX="314.0" layoutY="50.0" prefHeight="25.0" prefWidth="69.0" text="User ID" />
+        <TextField layoutX="123.0" layoutY="50.0" />
+        <TextField layoutX="392.0" layoutY="46.0" />
+        <Label layoutX="46.0" layoutY="125.0" prefHeight="25.0" prefWidth="69.0" text="Name" />
+        <Label layoutX="46.0" layoutY="200.0" prefHeight="25.0" prefWidth="69.0" text="Location" />
+        <Label layoutX="46.0" layoutY="275.0" prefHeight="25.0" prefWidth="69.0" text="Postal Code" />
+        <Label layoutX="314.0" layoutY="125.0" prefHeight="25.0" prefWidth="69.0" text="Country" />
+        <Label layoutX="314.0" layoutY="200.0" prefHeight="25.0" prefWidth="69.0" text="Address" />
+        <Label layoutX="314.0" layoutY="275.0" prefHeight="25.0" prefWidth="69.0" text="Phone" />
+        <Button layoutX="451.0" layoutY="340.0" mnemonicParsing="false" text="Save" />
+        <Button layoutX="515.0" layoutY="340.0" mnemonicParsing="false" text="Cancel" />
+        <TextField layoutX="123.0" layoutY="125.0" />
+        <ComboBox layoutX="392.0" layoutY="125.0" prefWidth="150.0" />
+        <ComboBox layoutX="123.0" layoutY="200.0" prefWidth="150.0" />
+        <TextField layoutX="392.0" layoutY="200.0" />
+        <TextField layoutX="392.0" layoutY="275.0" />
+        <TextField layoutX="123.0" layoutY="275.0" />
+    </children>
+</AnchorPane>
