@@ -30,7 +30,7 @@
             </Tab>
         </tabs>
       </TabPane>
-      <Button layoutX="673.0" layoutY="424.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="Back">
+      <Button fx:id="backButton" layoutX="673.0" layoutY="424.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="25.0" prefWidth="51.0" text="Back">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>

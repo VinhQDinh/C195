@@ -1,14 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="view.ModifyAppointment"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ModifyAppointment">
+    <children>
+        <Label alignment="TOP_CENTER" layoutX="14.0" layoutY="12.0" prefHeight="374.0" prefWidth="570.0" style="-fx-border-color: black;" text="Modify Appointments">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="46.0" layoutY="50.0" text="Appointment ID" />
+        <TextField layoutX="142.0" layoutY="50.0" />
+        <Label layoutX="314.0" layoutY="50.0" text="Start Date" />
+        <Label layoutX="46.0" layoutY="90.0" text="Title" />
+        <Label layoutX="46.0" layoutY="130.0" text="Description" />
+        <Label layoutX="46.0" layoutY="170.0" text="Location" />
+        <Label layoutX="46.0" layoutY="210.0" text="Type" />
+        <Label layoutX="46.0" layoutY="250.0" text="Contact" />
+        <TextField layoutX="142.0" layoutY="90.0" />
+        <TextField layoutX="142.0" layoutY="130.0" />
+        <TextField layoutX="142.0" layoutY="170.0" />
+        <TextField layoutX="142.0" layoutY="210.0" />
+        <Label layoutX="314.0" layoutY="90.0" text="Start Time" />
+        <Label layoutX="314.0" layoutY="130.0" text="End Time" />
+        <Label layoutX="314.0" layoutY="170.0" text="Customer ID" />
+        <Label layoutX="314.0" layoutY="210.0" text="User ID" />
+        <ComboBox layoutX="142.0" layoutY="250.0" prefWidth="150.0" />
+        <ComboBox layoutX="398.0" layoutY="90.0" prefWidth="150.0" />
+        <ComboBox layoutX="398.0" layoutY="130.0" prefWidth="150.0" />
+        <ComboBox layoutX="398.0" layoutY="170.0" prefWidth="150.0" />
+        <ComboBox layoutX="398.0" layoutY="210.0" prefWidth="150.0" />
+        <DatePicker layoutX="398.0" layoutY="50.0" prefHeight="25.0" prefWidth="150.0" />
+        <Button layoutX="444.0" layoutY="336.0" mnemonicParsing="false" text="Save" />
+        <Button layoutX="496.0" layoutY="336.0" mnemonicParsing="false" text="Cancel" />
+    </children>
 </AnchorPane>

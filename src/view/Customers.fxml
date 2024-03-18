@@ -24,13 +24,13 @@
             <children>
                 <HBox alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="500.0" spacing="10.0">
                     <children>
-                        <Button mnemonicParsing="false" onAction="#onActionAddCustomer" text="Add" />
-                        <Button mnemonicParsing="false" onAction="#onActionModifyCustomer" text="Modify" />
-                        <Button mnemonicParsing="false" onAction="#onActionDeleteCustomer" text="Delete" />
+                        <Button fx:id="addButton" mnemonicParsing="false" onAction="#handleAdd" text="Add" />
+                        <Button fx:id="modifyButton" mnemonicParsing="false" onAction="#handleModify" text="Modify" />
+                        <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#handleDelete" text="Delete" />
                     </children>
                 </HBox>
             </children>
         </AnchorPane>
-        <Button layoutX="614.0" layoutY="545.0" mnemonicParsing="false" onAction="#onActionMainMenu" text="Main Menu" />
+        <Button fx:id="backToMainMenuButton" layoutX="614.0" layoutY="545.0" mnemonicParsing="false" onAction="#handleBackToMain" text="Main Menu" />
     </children>
 </AnchorPane>

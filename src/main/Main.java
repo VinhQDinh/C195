@@ -7,18 +7,25 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.sql.SQLException;
+import java.util.ResourceBundle;
+
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/view/FirstScreen.fxml"));
-        primaryStage.setTitle("First View");
-        primaryStage.setScene(new Scene(root, 800, 600));
+        Parent root = FXMLLoader.load(getClass().getResource("/view/LogIn.fxml"));
+        primaryStage.setTitle("Log In");
+        primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }
 
     public static void main(String[] args) {
-        JDBC.openConnection();
+        try {
+            JDBC.openConnection();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
         launch(args);
         JDBC.closeConnection();
     }
