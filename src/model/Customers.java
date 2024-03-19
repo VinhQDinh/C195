@@ -1,5 +1,6 @@
 package model;
 
+import java.sql.Timestamp;
 import java.util.Date;
 
 /**
@@ -182,8 +183,8 @@ public class Customers {
      *
      * @return The last update time.
      */
-    public Date getLastUpdate() {
-        return lastUpdate;
+    public Timestamp getLastUpdate() {
+        return (Timestamp) lastUpdate;
     }
 
     /**
@@ -191,7 +192,7 @@ public class Customers {
      *
      * @param lastUpdate The last update time to set.
      */
-    public void setLastUpdate(Date lastUpdate) {
+    public void setLastUpdate(Timestamp lastUpdate) {
         this.lastUpdate = lastUpdate;
     }
 

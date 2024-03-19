@@ -17,12 +17,12 @@ public class userDAO extends Users {
             ps.setString(1, username);
             ps.setString(2, password);
             try (ResultSet rs = ps.executeQuery()) {
-                return rs.next(); // Return true if result set has at least one row
+                return rs.next();
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            // Log or handle the exception appropriately
-            throw e; // Rethrow the exception to propagate it
+
+            throw e;
         }
     }
 
